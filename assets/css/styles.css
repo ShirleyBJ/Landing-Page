@@ -31,16 +31,17 @@ nav{
 }
 
 .aside-header-menu{
-    width: 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 1em;
+    box-sizing: border-box;
 }
 
 .header-menu-icon{
     font-size:20px;
     color: var(--white);
+    margin: 0.5em;
 }
 
 img{
