@@ -8,8 +8,10 @@
     --black: #000000;
 }
 
-nav{
-    background-color: pink;
+
+
+nav, header{
+    background-color: var(--deep-purple);
 }
 
 .header-logos{
@@ -36,12 +38,11 @@ nav{
 
 .header-menu-icon{
     font-size:20px;
-    color: var(--white);
     margin: 0.5em;
+    color: var(--white);
 }
 
 .header-section-container{
-    background-color:lightgreen;
     display: flex;
     justify-content:space-between;
 }
@@ -49,6 +50,7 @@ nav{
 .header-section{
     width: 50%;
     margin: 5%;
+    color: var(--white);
 }
 
 .header-section-figure{
@@ -72,8 +74,8 @@ h3 {
     padding-bottom: 30px;    
 }
 
-.header-section-img{
-    width: 45%;
+.header-section-img,.main-section-img{
+    width: 50%;
     height: auto;
 }
 
@@ -85,6 +87,31 @@ h3 {
     text-decoration: none;
     border-radius: 5px;
 }
+
+/**Section About agency**/
+
+.main__section-agency{
+    display: flex;
+}
+.section-agency{
+    width: 60%;
+    padding: 3%;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.section-agency__figure{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--white);
+}
+
+/* .main-section-img{
+    position: relative;
+    right:250px;
+} */
+
 
 
 img{
