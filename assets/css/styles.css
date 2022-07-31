@@ -21,10 +21,6 @@ nav{
     margin:0;
 }
 
-.header-section-container{
-    background-color:lightgreen;
-}
-
 .header-nav{
     display: flex;
     justify-content: space-between;
@@ -43,6 +39,53 @@ nav{
     color: var(--white);
     margin: 0.5em;
 }
+
+.header-section-container{
+    background-color:lightgreen;
+    display: flex;
+    justify-content:space-between;
+}
+
+.header-section{
+    width: 50%;
+    margin: 5%;
+}
+
+.header-section-figure{
+    width:50%;
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    font-size:35px;
+}
+
+h3 {
+    font-size:15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.h3--size {
+    font-size:20px; 
+    font-weight: lighter;
+    padding-bottom: 30px;    
+}
+
+.header-section-img{
+    width: 45%;
+    height: auto;
+}
+
+.header-section-btn{
+    padding: 20px;
+    background-color: var(--white);
+    color: var(--black);
+    font-weight:bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
 
 img{
     width:30px;
