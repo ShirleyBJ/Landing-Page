@@ -33,7 +33,6 @@ nav, header{
     justify-content: space-between;
     align-items: center;
     margin: 1em;
-    box-sizing: border-box;
 }
 
 .header-menu-icon{
@@ -54,9 +53,12 @@ nav, header{
 }
 
 .header-section-figure{
-    width:50%;
+    width:100%;
     display: flex;
     justify-content: center;
+    background-image: url(/assets/img/joren-aranas-nmuyqgSOpEE-unsplash_1_50.jpg);
+    background-position: 50% 40%;
+    background-size: cover;
 }
 
 h2{
