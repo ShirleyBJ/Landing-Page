@@ -1,5 +1,9 @@
 /** Color Palette**/
 
+body{
+    margin: 0 auto;
+    width: 100%;
+}
 :root {
     --purple: #6357ff;
     --deep-purple: #6660ff;
@@ -8,10 +12,8 @@
     --black: #000000;
 }
 
-
-
 nav, header{
-    background-color: var(--deep-purple);
+    background-color: var(--purple);
 }
 
 .header-logos{
@@ -52,6 +54,7 @@ nav, header{
     color: var(--white);
 }
 
+/**Background-image**/
 .header-section-figure{
     width:100%;
     display: flex;
@@ -59,6 +62,15 @@ nav, header{
     background-image: url(/assets/img/joren-aranas-nmuyqgSOpEE-unsplash_1_50.jpg);
     background-position: 50% 40%;
     background-size: cover;
+}
+
+.section-agency__figure{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(/assets/img/domenico-loia-hGV2TfOh0ns-unsplash.jpg);
+    background-size: cover;
+    margin: 0;
 }
 
 h2{
@@ -92,31 +104,112 @@ h3 {
 
 /**Section About agency**/
 
-.main__section-agency{
+.main__section-agency, .main-section__services{
     display: flex;
 }
 .section-agency{
-    width: 60%;
+    width: 50%;
     padding: 3%;
     background-color: var(--black);
     color: var(--white);
 }
 
 .section-agency__figure{
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: center;
     background-color: var(--white);
 }
 
-/* .main-section-img{
-    position: relative;
-    right:250px;
-} */
+/* Section our services*/
 
+.section-services__container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.section-services{
+    padding: 3%;
+}
 
+.contained__services{
+    width: 50%;
+}
 
-img{
-    width:30px;
-    height:30px;
+.fa-check-to-slot{
+    color: var(--purple);
+    font-size: 1.5rem;
+    margin: 0.5em;
+}
+
+.services-title--inline{
+    display: inline;
+}
+
+.section-services__figure{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(/assets/img/matthew-cabret-9Z_bNTvBiqM-unsplash.jpg);
+    background-size: cover;
+    background-position: 50% 30%;
+    margin: 1em;
+}
+
+.title--purple{
+    color: var(--purple);
+}
+
+/**Section our works**/
+.title--centered{
+    text-align: center;
+}
+
+.section-portfolio__container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.portfolio-images{
+    width: 100%;
+    height: auto;
+}
+
+/*Section our team*/
+.section-team__container{
+    display:flex;
+    justify-content:space-between
+}
+
+.team-card{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+}
+
+.team-card_figure{
+    margin: 0;
+    background-color: var(--purple);
+}
+
+.team-card__img{
+    width: 100%;
+    height:auto;
+}
+
+.team-card__informations{
+    display: flex; 
+    justify-content:space-around;
+    text-align: center;
+    background-color: var(--purple);
+    color: var(--white);
+}
+
+.team-card__socialMedia{
+    align-self: center;
+    font-size: 16px;
+}
+
+.icon--margin{
+    margin: 0.5em;
 }
