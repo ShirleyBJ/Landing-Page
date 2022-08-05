@@ -77,7 +77,7 @@ h2{
     font-size:35px;
 }
 
-h3 {
+h3, textarea {
     font-size:15px;
     font-family: 'Open Sans', sans-serif;
 }
@@ -142,7 +142,7 @@ h3 {
     margin: 0.5em;
 }
 
-.services-title--inline{
+.services-title--inlinen,.icon--inline{
     display: inline;
 }
 
@@ -212,4 +212,99 @@ h3 {
 
 .icon--margin{
     margin: 0.5em;
+}
+
+/* Section Contact Us */
+
+.section-contact{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 5rem;
+}
+
+.section-contact__container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.form-contact{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.section-contact__localisation-block{
+    width: 50%;
+    display: flex;
+    background-color: var(--deep-purple);
+}
+
+.localisation-block__figure{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.localisation-maps{
+    width: 450px;
+}
+
+.localisation-block__infos{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+address, address>a{
+    margin-bottom: 2.5rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.icon--white,.text--white{
+    color: var(--white);
+}
+
+a[href*="mailto"],a[href*="tel"]{
+    text-decoration: none;
+}
+
+a[href*="mailto"]:hover,a[href*="tel"]:hover{
+    text-decoration: underline overline var(--white) ;
+}
+
+
+input[type="text"],input[type="email"],textarea{
+    margin: 1rem;
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid gray;
+    padding: 0.5rem;
+    font-size: 15px;
+}
+
+textarea{
+    color:gray;
+}
+
+.form-btn{
+    margin: 1rem;
+    padding: 20px;
+    background-color: var(--deep-purple);
+    color: var(--white);
+    font-weight:bold;
+    text-decoration: none;
+    border-radius: 2.5px;
+    border: none;
+    -webkit-box-shadow: 8px 9px 27px 6px #C8C4FF; 
+box-shadow: 8px 9px 27px 6px #C8C4FF;
+width: 50%;
+}
+
+footer{
+    text-align: center;
 }
