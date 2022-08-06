@@ -1,5 +1,19 @@
 /** Color Palette**/
 
+/** Hiérarchisation du CSS
+•le positionnement. Exemple : display, margin, padding 
+
+•le dimensionnement. Exemple : width, height, min-width 
+
+•la typographie. Exemple : font-size, font-weight, color 
+
+•le fond. Exemple : background, background-color 
+
+•les bordures. Exemple : border, border-radius, box-shadow 
+
+•le reste. Exemple : transition, rotate 
+**/
+
 body{
     margin: 0 auto;
     width: 100%;
@@ -31,15 +45,15 @@ nav, header{
 }
 
 .aside-header-menu{
+    margin: 1em;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1em;
 }
 
 .header-menu-icon{
-    font-size:20px;
     margin: 0.5em;
+    font-size:20px;
     color: var(--white);
 }
 
@@ -49,28 +63,28 @@ nav, header{
 }
 
 .header-section{
-    width: 50%;
     margin: 5%;
+    width: 50%;
     color: var(--white);
 }
 
 /**Background-image**/
 .header-section-figure{
-    width:100%;
     display: flex;
     justify-content: center;
+    width:100%;
     background-image: url(/assets/img/joren-aranas-nmuyqgSOpEE-unsplash_1_50.jpg);
     background-position: 50% 40%;
     background-size: cover;
 }
 
 .section-agency__figure{
-    width:100%;
+    margin: 0;
     display: flex;
     justify-content: center;
+    width:100%;    
     background-image: url(/assets/img/domenico-loia-hGV2TfOh0ns-unsplash.jpg);
     background-size: cover;
-    margin: 0;
 }
 
 h2{
@@ -83,9 +97,9 @@ h3, textarea {
 }
 
 .h3--size {
+    padding-bottom: 30px;  
     font-size:20px; 
-    font-weight: lighter;
-    padding-bottom: 30px;    
+    font-weight: lighter;  
 }
 
 .header-section-img,.main-section-img{
@@ -95,10 +109,10 @@ h3, textarea {
 
 .header-section-btn{
     padding: 20px;
-    background-color: var(--white);
     color: var(--black);
     font-weight:bold;
     text-decoration: none;
+    background-color: var(--white);
     border-radius: 5px;
 }
 
@@ -108,16 +122,16 @@ h3, textarea {
     display: flex;
 }
 .section-agency{
-    width: 50%;
     padding: 3%;
-    background-color: var(--black);
+    width: 50%;
     color: var(--white);
+    background-color: var(--black);
 }
 
 .section-agency__figure{
-    width: 50%;
     display: flex;
     justify-content: center;
+    width: 50%;
     background-color: var(--white);
 }
 
@@ -125,8 +139,8 @@ h3, textarea {
 
 .section-services__container{
     display: flex;
-    width: 100%;
     flex-wrap: wrap;
+    width: 100%;
 }
 .section-services{
     padding: 3%;
@@ -137,9 +151,9 @@ h3, textarea {
 }
 
 .fa-check-to-slot{
+    margin: 0.5em;
     color: var(--purple);
     font-size: 1.5rem;
-    margin: 0.5em;
 }
 
 .services-title--inlinen,.icon--inline{
@@ -147,13 +161,13 @@ h3, textarea {
 }
 
 .section-services__figure{
-    width:100%;
     display: flex;
     justify-content: center;
+    width:100%;
+    margin: 1em;
     background-image: url(/assets/img/matthew-cabret-9Z_bNTvBiqM-unsplash.jpg);
     background-size: cover;
     background-position: 50% 30%;
-    margin: 1em;
 }
 
 .title--purple{
@@ -200,9 +214,9 @@ h3, textarea {
 .team-card__informations{
     display: flex; 
     justify-content:space-around;
+    color: var(--white);
     text-align: center;
     background-color: var(--purple);
-    color: var(--white);
 }
 
 .team-card__socialMedia{
@@ -229,22 +243,22 @@ h3, textarea {
 }
 
 .form-contact{
-    align-self: center;
     display: flex;
     flex-direction: column;
+    align-self: center;
     width: 50%;
 }
 
 .section-contact__localisation-block{
-    width: 50%;
     display: flex;
+    width: 50%;
     background-color: var(--deep-purple);
 }
 
 .localisation-block__figure{
-    width: 50%;
     display: flex;
     align-items: center;
+    width: 50%;
 }
 
 .localisation-maps{
@@ -252,11 +266,11 @@ h3, textarea {
 }
 
 .localisation-block__infos{
-    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 50%;
 }
 
 address, address>a{
@@ -280,11 +294,11 @@ a[href*="mailto"]:hover,a[href*="tel"]:hover{
 
 input[type="text"],input[type="email"],textarea{
     margin: 1rem;
+    padding: 0.5rem;
     width: 100%;
+    font-size: 15px;
     border:none;
     border-bottom: 1px solid gray;
-    padding: 0.5rem;
-    font-size: 15px;
 }
 
 textarea{
@@ -294,10 +308,10 @@ textarea{
 .form-btn{
     margin: 1rem;
     padding: 20px;
-    background-color: var(--deep-purple);
     color: var(--white);
     font-weight:bold;
     text-decoration: none;
+    background-color: var(--deep-purple);
     border-radius: 2.5px;
     border: none;
     -webkit-box-shadow: 8px 9px 27px 6px #C8C4FF; 
