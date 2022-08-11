@@ -62,6 +62,16 @@ nav, header{
     font-size: 1.5rem;
 }
 
+@media screen and (max-width: 800px){
+    .title-agency,.title-services{
+        text-align: center;
+    }
+
+    .h3--size{
+        font-size:16px;
+    }
+}
+
 /** 2.0 - NAV **/
 
 .header-nav{
@@ -138,6 +148,23 @@ nav, header{
     background-size: cover;
 }
 
+@media screen and (max-width:800px){
+    .main__section-agency, .main-section__services{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-agency{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .section-agency__figure{
+        display: none;
+    }
+}
+
 /** 4.2 - MAIN Services **/
 
 .section-services__container{
@@ -179,6 +206,19 @@ nav, header{
     height: auto;
 }
 
+@media screen and (max-width:800px){
+    .section-portfolio__container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .portfolio-images{
+        width: 150px;
+        height: auto;
+    }
+}
+
 /** 4.4 - MAIN Team **/
 
 .section-team__container{
@@ -217,6 +257,25 @@ nav, header{
 
 .icon--margin{
     margin: 0.5em;
+}
+
+@media screen and (max-width:800px){
+    .section-team__container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .team-card__img{
+        width: 175px;
+        display: block;
+        margin: 0px auto;
+    }
+
+    .team-card__informations{
+        display:flex;
+        flex-direction: column;
+    }
+
 }
 
 /** 4.5 - MAIN Contact **/
@@ -278,6 +337,14 @@ width: 50%;
     width: 50%;
 }
 
+.block-infos__container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 address, address>a{
     margin-bottom: 2.5rem;
     color: var(--white);
@@ -310,6 +377,44 @@ textarea{
     color:gray;
 }
 
+@media screen and (max-width:800px){
+    .section-contact{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-contact__container{
+        width: 100%;
+    }
+
+    .form-contact{
+        width: 75%;
+    }
+
+    .form-btn{
+        align-self: center;
+    }
+
+    .section-contact__localisation-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .localisation-maps{
+        width: 25em;
+        height: auto;
+    }
+
+    .localisation-block__infos{
+        display: flex;
+        flex-direction: row;
+        width: auto;
+    }
+
+}
+
 /** 5.0 - ASIDE **/
 
 .aside-header-menu{
@@ -329,4 +434,6 @@ textarea{
 
 footer{
     text-align: center;
+    color: var(--purple);
+    font-weight: bold;
 }
