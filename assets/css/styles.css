@@ -77,6 +77,10 @@ nav, header{
 .header-nav{
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .header-logos{
