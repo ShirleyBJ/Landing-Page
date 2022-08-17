@@ -150,7 +150,7 @@ nav, header{
     margin: 0;
     display: flex;
     justify-content: center;
-    width:75%;  
+    width:50%;  
     background-color: var(--white);  
     background-image: url(/assets/img/domenico-loia-hGV2TfOh0ns-unsplash.jpg);
     background-size: cover;
