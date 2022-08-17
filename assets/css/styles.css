@@ -16,6 +16,10 @@
 
 /** 1.0 - BODY **/
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0 auto;
     width: 100%;
@@ -270,9 +274,9 @@ nav, header{
     }
 
     .team-card__img{
-        width: 175px;
         display: block;
         margin: 0px auto;
+        width: 175px;
     }
 
     .team-card__informations{
